@@ -4,10 +4,10 @@
 ### Node js, NPM
 
 ## Installation
-## (sudo) npm install --save-dev
+### (sudo) npm install --save-dev
 
 ## running
-## webpack && node main.js
+### webpack && node main.js
 
-###TO USE:
-### Upload file, name bucket and hit run.
+### TO USE:
+#### Upload file, name bucket and hit run.
