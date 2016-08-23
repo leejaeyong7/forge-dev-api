@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<!--                 Index.html Template                 -->
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Forge API</title>
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+          crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+          integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+          crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous">
+    </script>
+    <style>
+      .center-child{
+      position:absolute;
+      top:50%;
+      left:50%;
+      transform:translate(-50%,-50%);
+      }
+      .glyphicon.spinning {
+      animation: spin 1s infinite linear;
+      -webkit-animation: spin2 1s infinite linear;
+      }
+
+      @keyframes spin {
+      from { transform: scale(1) rotate(0deg); }
+      to { transform: scale(1) rotate(360deg); }
+      }
+
+      @-webkit-keyframes spin2 {
+      from { -webkit-transform: rotate(0deg); }
+      to { -webkit-transform: rotate(360deg); }
+      }
+    </style>
+  </head>
+  <body style="margin:0;">
+    <div id="main">
+      <div class="panel panel-default"
+           style="position: fixed;
+                  left: 25%;
+                  width:50%;
+                  top: 25%;
+                  height: 50%">
+        <div class="panel-heading">
+          <h3 class="panel-title">Upload File</h3>
+        </div>
+        <div class="panel-body">
+          <div>
+            <div id="status-container" style="">
+              <div id="file-ready" 
+                 class="alert alert-warning" role="alert">
+                Please choose file to upload!
+              </div>
+              <div id="bucket-exists" style="display:none;"
+                 class="alert alert-warning" role="alert">
+                That bucket name already exists!
+              </div>
+              <div id="progress"
+                   class="alert alert-info" role="alert"
+                   style="display:none">
+              </div>
+            </div>
+            <div style="padding: 5px">
+              <span>
+                Bucket Name:
+              </span>
+              <input id="bucket-name"
+                     type="text"
+                     name="name"
+                     class="form-control"
+                     style="position:relative; margin-top:10px; 
+                            left:30px; width: calc(100% - 120px);
+                            display:inline-block;"/>
+            </div>
+          </div>
+        </div>
+        <div style="position:relative; padding:10px; bottom:0;">
+          <span id="file-name" style="float:left">
+          </span>
+          <div style="float:right; margin-left: 10px; margin-right: 10px">
+            <button id="run" type="submit" class="btn btn-primary btn-submit">
+              Upload & Run
+            </button>
+          </div>
+          <label class="btn btn-default btn-file"
+                 style="float:right">
+            Browse
+            <input id="file-input" name="file" class="form-control"
+                   type="file" style="display: none;"
+                   accept="rvt">
+          </label>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

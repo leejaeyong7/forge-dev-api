@@ -1,0 +1,31 @@
+{
+  "name": "forge-api-tester",
+  "version": "1.0.0",
+  "description": "Testing Environment for Forge Model Derivative API",
+  "main": "main.js",
+  "scripts": {
+    "test": "npm test",
+    "start": "webpack-dev-server --inline --content-base assets/ --history-api-fallback"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leejaeyong7/model-derivative.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leejaeyong7/model-derivative/issues"
+  },
+  "homepage": "https://github.com/leejaeyong7/model-derivative#readme",
+  "devDependencies": {
+    "cors": "^2.7.1",
+    "html-webpack-plugin": "^2.22.0",
+    "jquery": "^3.1.0",
+    "nodemon": "^1.10.0",
+    "path": "^0.12.7",
+    "three": "^0.79.0",
+    "urlsafe-base64": "^1.0.0",
+    "webpack": "^1.13.1",
+    "webpack-dev-server": "^1.14.1"
+  }
+}
