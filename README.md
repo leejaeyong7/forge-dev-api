@@ -15,6 +15,9 @@ Upload RVT file, type name for bucket and hit run.
 It will take ~30 Mins, and give runnable command, 
 which you can copy and paste to Bash to download svf file.
 
+## TO USE VIEWER:
+Simply go to localhost:8080/viewer to use Autodesk API viewer for Mccormick Place
+
 ## Resources:
 Model derivative API:
 https://developer.autodesk.com/en/docs/model-derivative/v2/overview/basics/
