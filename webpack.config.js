@@ -32,6 +32,10 @@ module.exports = {
       new HtmlWebpackPlugin({
         template: 'src/index.html'
       }),
+      new HtmlWebpackPlugin({
+        filename: "viewer.html",
+        template: 'src/viewer.html'
+      }),
       new webpack.HotModuleReplacementPlugin()
     ]
 };

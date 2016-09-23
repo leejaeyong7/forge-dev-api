@@ -39,6 +39,9 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname,'./dist/index.html'));
 });
 
+app.get("/viewer",function(req,res){
+  res.sendFile(path.join(__dirname,'./dist/viewer.html'))
+})
 
 // logs user into forge
 app.post("/forge-login",function(req,res){
